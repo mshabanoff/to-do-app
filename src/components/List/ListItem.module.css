@@ -1,0 +1,64 @@
+.list {
+    list-style: none;
+}
+
+.list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6.5rem;
+    padding: 0 2.5rem 0 2.5rem;
+    gap: 2.5rem;
+    border-bottom: 0.15rem solid var(--color-very-light-grayish-blue);
+}
+
+.list li:last-child {
+    border-bottom: none;
+}
+
+/* .list li input[type="checkbox"] {
+  display: none;
+} */
+
+.list li.completed p {
+    color: var(--color-light-grayish-blue);
+    text-decoration-line: line-through;
+}
+
+.list li.completed .fake-checkbox-wrapper {
+  background: transparent;
+}
+
+.list li.completed .fake-checkbox {
+    background-image: linear-gradient(
+      to bottom right,
+      var(--color-gradient-start),
+      var(--color-gradient-end)
+    );
+}
+
+.fake-checkbox-wrapper {
+    background: var(--color-very-light-grayish-blue);
+    border-radius: 50%;
+    padding: 0.15rem;
+}
+
+.fake-checkbox-wrapper:hover {
+    background: linear-gradient(
+      to bottom right,
+      var(--color-gradient-start),
+      var(--color-gradient-end)
+    );
+}
+
+.fake-checkbox {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: inherit;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

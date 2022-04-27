@@ -1,0 +1,22 @@
+.container {
+    width: 80%;
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.wrapper.light {
+    color: var(--color-dark-grayish-blue);
+    background-color: var(--color-very-light-gray);
+    background-image: url('../../assets/bg-desktop-light.jpg');
+}
+
+.wrapper.light button {
+    color: var(--color-dark-grayish-blue);
+}

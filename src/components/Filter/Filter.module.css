@@ -1,0 +1,52 @@
+.todo-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+    border-top: 0.15rem solid var(--color-very-light-grayish-blue);
+}
+
+
+.btn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.btn:hover {
+    outline: none;
+}
+
+.clear-btn.group {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.filter-btn.group-mobile {
+    display: none;
+}
+
+.btn.active {
+    color: var(--color-gradient-start);
+    font-weight: 700;
+  }
+
+
+  @media (max-width: 576px ) {
+    .filter-btn.group-mobile {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 1.5rem;
+    }
+    .filter-btn.group {
+        display: none;
+    }
+}
+
+.todo-list {
+    box-shadow: 1px 3px 15px 8px rgba(154, 157, 204, 0.3);
+    background-color: white;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+}

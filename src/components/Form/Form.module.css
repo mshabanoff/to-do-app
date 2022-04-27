@@ -1,0 +1,56 @@
+.form-control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    background-color: white;
+    height: 6rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    padding: 2.5rem;
+}
+
+.fake-checkbox-wrapper {
+    background: var(--color-very-light-grayish-blue);
+    border-radius: 50%;
+    padding: 0.15rem;
+}
+
+.fake-checkbox-wrapper:hover {
+    background: linear-gradient(
+      to bottom right,
+      var(--color-gradient-start),
+      var(--color-gradient-end)
+    );
+}
+
+.fake-checkbox {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: inherit;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form-control form,
+.form-control form .todo-form-input {
+    width: 100%;
+}
+
+.form-control form label,
+.form-control form .todo-form-button {
+    display: none;
+}
+
+.todo-form-input {
+    font-size: 1.8rem;
+    border: none;
+}
+
+.todo-form-input:focus {
+    outline: none;
+}
